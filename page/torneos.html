@@ -10,45 +10,62 @@
   <link rel="icon" type="image/jpg" href="/medios/favicon-16x16.png"/>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
-        <div class="container">
-          <a class="navbar-brand" href="../index.html">Gol Argentino</a>
-          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="menu" class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-              <li class="nav-item"><a class="nav-link" href="torneos.html">Torneos</a></li>
-              <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
-              <li class="nav-item"><a class="nav-link" href="analisis.html">Análisis</a></li>
-              <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-            </ul>
-          </div>
-        </div>
+  <header class="header">
+    <div class="container">
+      <h1>Gol Argentino</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="torneos.html" class="active">Torneos</a></li>
+          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="analisis.html">Análisis</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
       </nav>
-      
-<header class="hero-small d-flex align-items-center justify-content-center">
-  <div data-aos="zoom-in">
-    <h1 class="text-white">Torneos</h1>
-  </div>
-</header>
+    </div>
+  </header>
 
-<main class="container my-5">
-  <section data-aos="fade-up">
-    <h2>Campeonatos Memorables</h2>
-    <p>Los torneos más recordados en la historia de nuestro fútbol...</p>
-  </section>
-</main>
+  <main class="main-content container">
+    <section class="intro">
+      <h2>Torneos del fútbol argentino</h2>
+      <p>El fútbol argentino se estructura en múltiples torneos oficiales que conforman un sistema competitivo apasionante y dinámico, reconocido por su intensidad, su historia rica y la pasión inigualable de sus hinchas. No se trata solo de quién gana o asciende: cada torneo representa una tradición, una oportunidad para mostrar talento local y un reflejo del carácter federal del deporte en el país.
+      Desde la prestigiosa Liga Profesional de Fútbol, donde compiten los clubes más poderosos del país, hasta la vibrante y muchas veces impredecible Copa Argentina, el calendario futbolístico argentino ofrece acción durante todo el año. A eso se suma el sistema de ascensos y descensos, que permite a los clubes de categorías menores soñar con llegar a la elite, y que mantiene el nivel de competitividad alto en cada partido, sin importar la división.
+      </p>
+      <img src="/medios/imagenTorneos.jpg" alt="equipos del futbol argentino" class="diferentes-equipos">
+    </section>
 
-<footer class="bg-dark text-light text-center py-3">
-    <p class="mb-0">© 2025 Gol Argentino. Todos los derechos reservados.</p>
-</footer>
+    <section class="grid-destacados">
+      <article>
+        <h3>Liga Profesional de Fútbol (LPF)</h3>
+        <p>Es la principal categoría del fútbol argentino. Participan 28 equipos en un formato de todos contra todos. Los partidos se disputan de viernes a lunes y cuentan con transmisiones en vivo y análisis táctico semanal. River y Boca lideran el historial de títulos.</p>
+        <img src="/medios/logolpfTorneos.png" alt="logo" class="lpf">
+      </article>
+      <article>
+        <h3>Copa de la Liga Profesional</h3>
+        <p>Es un torneo que se juega en el primer semestre del año, dividido en dos zonas. Clasifican los mejores de cada zona a una fase final de eliminación directa. Ha ganado importancia por su impacto en las clasificaciones internacionales.</p>
+        <img src="/medios/copadelaligaTorneos.jpeg" alt="copa" class="copaDelaLiga">
+      </article>
+      <article>
+        <h3>Primera Nacional</h3>
+        <p>Segunda división del fútbol argentino. Clubes tradicionales como Ferro, Quilmes o San Martín de Tucumán buscan regresar a la máxima categoría. Se juega en dos zonas con ascenso directo y repechajes.</p>
+        <img src="/medios/primeranacionalTorneos.png" alt="primeraBnacional" class="bNacional">
+      </article>
+      <article>
+        <h3>Copa Argentina</h3>
+        <p>Un torneo integrador donde participan equipos de todas las categorías, desde la Primera División hasta clubes del Federal A y B. Es conocido por sus sorpresas y cruces inolvidables. El campeón obtiene una plaza en la Copa Libertadores.</p>
+        <img src="/medios/logocopargentinaTorneos.png" alt="copaArgentina" class="copaArgentina">
+      </article>
+      <article>
+        <h3>Supercopa Argentina</h3>
+        <p>Enfrenta al campeón del torneo de liga con el de la Copa Argentina. Es un partido único que define un nuevo título nacional. River y Boca son los máximos ganadores desde su creación.</p>
+        <img src="/medios/supercopargentinaTorneos.png" alt="supercopArgentina" class="superCopa">
+      </article>
+    </section>
+  </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init();</script>
+  <footer class="footer">
+    <p>&copy; 2025 Gol Argentino - Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>

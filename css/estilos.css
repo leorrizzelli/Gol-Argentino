@@ -1,17 +1,311 @@
-/* Error: expected "}".
- *     ,
- * 282 |   }
- *     |    ^
- *     '
- *   sass\estilos.scss 282:4  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a     \2577 \a 282 \2502    }\d\a     \2502     ^\a     \2575 \a   sass\\estilos.scss 282:4  root stylesheet';
+header.header {
+  background-color: #2d764d;
+  color: #fff;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+nav ul.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul.nav li {
+  margin: 0 15px;
+}
+
+nav ul.nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul.nav a.active,
+nav ul.nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+}
+
+footer.footer {
+  text-align: center;
+  background-color: #2d764d;
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.imgclasicos, .diferentes-equipos, .logopaginaindex,
+.lpf, .copaDelaLiga, .bNacional, .copaArgentina,
+.superCopa, .fotografointro, .fotodecentralestudiantesindex,
+.fotoSLindex, .fotobocaindex {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4 {
+  color: #0d1b2a;
+  margin-bottom: 10px;
+}
+
+.imgclasicos, .diferentes-equipos, .logopaginaindex,
+.lpf, .copaDelaLiga, .bNacional, .copaArgentina,
+.superCopa, .fotografointro, .fotodecentralestudiantesindex,
+.fotoSLindex, .fotobocaindex {
+  border-radius: 8px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2d764d;
+  color: #222;
+  line-height: 1.6;
+  font-size: 1.2em;
+  transition: font-size 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header.header {
+  background-color: #2d764d;
+  color: #fff;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+header.header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+nav ul.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 10px;
+}
+nav ul.nav li {
+  margin: 0 15px;
+}
+nav ul.nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+nav ul.nav a.active, nav ul.nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+}
+
+main.main-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.diferentes-equipos,
+.fotografointro,
+.fotodecentralestudiantesindex,
+.fotoSLindex,
+.fotobocaindex,
+.logopaginaindex {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.fotodecentralestudiantesindex,
+.fotoSLindex,
+.fotobocaindex {
+  border-radius: 12px;
+}
+
+.imgclasicos,
+.lpf,
+.copaDelaLiga,
+.bNacional,
+.copaArgentina,
+.superCopa {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+section.intro {
+  margin-bottom: 30px;
+}
+
+h2, h3, h4 {
+  color: #0d1b2a;
+  margin-bottom: 10px;
+}
+
+.grid-destacados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.grid-destacados article {
+  background-color: #e0e1dd;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+.grid-destacados article:hover {
+  transform: scale(1.02);
+}
+
+ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+footer.footer {
+  text-align: center;
+  background-color: #2d764d;
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contact-form button {
+  padding: 10px;
+  background-color: #1b263b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-form button:hover {
+  background-color: #415a77;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider img {
+  width: 100%;
+  flex-shrink: 0;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 5;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.poster-pinterest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.poster-pinterest .poster-link {
+  display: block;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: transform 0.3s;
+}
+.poster-pinterest .poster-link .postermultimedia {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+.poster-pinterest .poster-link span {
+  display: block;
+  margin-top: 10px;
+  color: #003366;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.poster-pinterest .poster-link:hover {
+  transform: scale(1.03);
+}
+
+/*# sourceMappingURL=estilos.css.map */

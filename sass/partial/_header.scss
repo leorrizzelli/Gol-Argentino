@@ -1,0 +1,39 @@
+// _header.scss
+header.header {
+  background-color: #2d764d;
+  color: #fff;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+nav ul.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul.nav li {
+  margin: 0 15px;
+}
+
+nav ul.nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul.nav a.active,
+nav ul.nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+}

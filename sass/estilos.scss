@@ -1,8 +1,7 @@
-@import "./partial/header";
-@import "./partial/footer";
-@import "./partial/variables";
-@import "./partial/mixins";
-
+@use "./partial/header" as *;
+@use "./partial/footer" as *;
+@use "./partial/variables" as *;
+@use "./partial/mixins" as *;
 
 // === PLACEHOLDERS ===
 %img-responsive {
@@ -17,7 +16,6 @@
   color: $accent-color;
   margin-bottom: 10px;
 }
-
 
 @mixin responsive-grid($min-width: 260px) {
   display: grid;
@@ -37,8 +35,6 @@
 h2, h3, h4 {
   @extend %section-title;
 }
-
-
 
 // === Body ===
 body {
@@ -60,46 +56,57 @@ body {
 
 // === Header ===
 header.header {
-  .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
   background-color: #2d764d;
-  color: #fff;
   padding: 20px 0;
   margin-bottom: 20px;
-  font-size: 2rem;
-  font-weight: bold;
 
-  h1 {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-}
-}
+  .logo-wrapper {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
 
-// === Navegación ===
-nav {
-  ul.nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
+    .logo-text {
+      font-size: 2.5rem;
+      display: inline-block; 
+      text-align: center;
+      width: 100%;
+    }
+  } 
+
+  //NAVEGACION//
+  nav {
     margin-top: 10px;
 
-    li {
-      margin: 0 15px;
-    }
+    ul.custom-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
 
-    a {
-      text-decoration: none;
-      color: #ccc;
-      font-weight: bold;
-      padding: 5px 10px;
-      transition: color 0.3s, background-color 0.3s;
+      li {
+        margin: 0 15px;
 
-      &.active,
-      &:hover {
-        background-color: #ffffff;
-        color: #000000;
-        border-radius: 5px;
+        a {
+          text-decoration: none;
+          color: #ccc;
+          font-weight: bold;
+          padding: 3px 7px;  // padding reducido
+          font-size: 0.9rem; // tamaño de letra más pequeño
+          transition: color 0.3s, background-color 0.3s;
+
+          &.active,
+          &:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 5px;
+          }
+        }
       }
     }
   }
@@ -285,35 +292,31 @@ footer.footer {
 }
 
 // === Poster tipo Pinterest ===
-.poster-pinterest {
+.poster-link {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: transform 0.3s;
 
-  .poster-link {
+  img.poster-pinterest {
+    max-width: 100%;
+    height: auto;
     display: block;
-    text-decoration: none;
-    margin-top: 15px;
-    transition: transform 0.3s;
+    object-fit: contain;
+  }
 
-    .postermultimedia {
-        max-width: 100%;
-        height: auto;
-        display: block;
-       object-fit: contain;
-    }
+  span {
+    display: block;
+    margin-top: 10px;
+    color: #003366;
+    font-weight: bold;
+    font-size: 1rem;
+  }
 
-    span {
-      display: block;
-      margin-top: 10px;
-      color: #003366;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    &:hover {
-      transform: scale(1.03);
-    }
+  &:hover {
+    transform: scale(1.03);
   }
 }
